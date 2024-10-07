@@ -14,6 +14,7 @@
 		3959A4B82C94D7420075BA75 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3959A4B72C94D7420075BA75 /* Base */; };
 		3959A4BA2C94D7440075BA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3959A4B92C94D7440075BA75 /* Assets.xcassets */; };
 		3959A4BD2C94D7440075BA75 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3959A4BC2C94D7440075BA75 /* Base */; };
+		399FB6AE2CB4346700F3C22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3959A4B62C94D7420075BA75 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +132,7 @@
 				3959A4BA2C94D7440075BA75 /* Assets.xcassets in Resources */,
 				3959A4BD2C94D7440075BA75 /* Base in Resources */,
 				3959A4B82C94D7420075BA75 /* Base in Resources */,
+				399FB6AE2CB4346700F3C22C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
