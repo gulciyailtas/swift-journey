@@ -40,21 +40,14 @@
             </objects>
             <point key="canvasLocation" x="448" y="-4"/>
         </scene>
-        <!--DetalisVC-->
+        <!--DetailsVC-->
         <scene sceneID="PNo-uN-1jK">
             <objects>
-                <viewController id="U5n-uw-Y6W" customClass="DetalisVC" customModule="LendmarkBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Htf-aZ-RYO">
+                <viewController id="U5n-uw-Y6W" customClass="DetailsVC" customModule="LendmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Htf-aZ-RYO">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZR6-NY-kUX">
-                                <rect key="frame" x="20" y="289" width="361" height="289"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="NS9-9c-qsu"/>
-                                    <constraint firstAttribute="width" constant="361" id="xBI-uR-l4e"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Landmark Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-vv-aAB">
                                 <rect key="frame" x="65" y="116" width="262" height="82"/>
                                 <constraints>
@@ -64,6 +57,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZR6-NY-kUX">
+                                <rect key="frame" x="20" y="283" width="361" height="289"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="NS9-9c-qsu"/>
+                                    <constraint firstAttribute="width" constant="361" id="xBI-uR-l4e"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7sN-TP-2mZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

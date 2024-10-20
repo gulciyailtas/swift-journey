@@ -35,11 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         landmarkImages.append(UIImage(named: "Kremlin")!)
         landmarkImages.append(UIImage(named: "Stonhenge")!)
         landmarkImages.append(UIImage(named: "Taj")!)
-        
-        
-        
-        
     }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return landmarkNames.count
     }
