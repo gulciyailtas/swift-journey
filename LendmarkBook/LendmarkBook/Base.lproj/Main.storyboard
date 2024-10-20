@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w18-gw-CdY">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LendmarkBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IUw-Ur-MuY">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="91" width="428" height="801"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -33,39 +33,23 @@
                     <navigationItem key="navigationItem" id="b72-K6-4jD"/>
                     <connections>
                         <outlet property="tableView" destination="IUw-Ur-MuY" id="vD7-6Y-Gee"/>
-                        <segue destination="tCK-ZX-UEH" kind="show" identifier="toDetailsVC" customClass="DetailsVC" customModule="LendmarkBook" id="JjS-db-zSf"/>
+                        <segue destination="U5n-uw-Y6W" kind="show" identifier="toDetailsVC" id="PwA-5z-BZ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440.45801526717554" y="12.67605633802817"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sB9-YF-oKi">
-            <objects>
-                <viewController id="tCK-ZX-UEH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jic-SN-xUq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="0Ll-NP-o3v"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0I6-Bw-wqT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovt-Sb-JpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1301.5267175572519" y="-3.5211267605633805"/>
+            <point key="canvasLocation" x="448" y="-4"/>
         </scene>
         <!--DetalisVC-->
         <scene sceneID="PNo-uN-1jK">
             <objects>
                 <viewController id="U5n-uw-Y6W" customClass="DetalisVC" customModule="LendmarkBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Htf-aZ-RYO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZR6-NY-kUX">
-                                <rect key="frame" x="16" y="257" width="361" height="247"/>
+                                <rect key="frame" x="20" y="289" width="361" height="289"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="247" id="NS9-9c-qsu"/>
                                     <constraint firstAttribute="width" constant="361" id="xBI-uR-l4e"/>
@@ -93,6 +77,7 @@
                             <constraint firstItem="JfE-vv-aAB" firstAttribute="centerX" secondItem="ZR6-NY-kUX" secondAttribute="centerX" id="i9c-nD-O8d"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5UU-NW-mK7"/>
                     <connections>
                         <outlet property="imageView" destination="ZR6-NY-kUX" id="kaA-AI-ZJL"/>
                         <outlet property="landmarkLabel" destination="JfE-vv-aAB" id="Ajf-r1-B78"/>
@@ -100,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30Z-Cc-Lbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2202.290076335878" y="-3.5211267605633805"/>
+            <point key="canvasLocation" x="1464" y="-4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bsl-01-6yS">
@@ -108,7 +93,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w18-gw-CdY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ina-U8-gnf">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
