@@ -81,6 +81,7 @@ class DetailsVC: UIViewController, UIImagePickerControllerDelegate,UINavigationC
         
         imageView.isUserInteractionEnabled = true
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
+        view.addGestureRecognizer(imageTapRecognizer)
         
     }
     
