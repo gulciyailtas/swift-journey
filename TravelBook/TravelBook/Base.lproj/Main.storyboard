@@ -64,30 +64,40 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWi-MA-psk">
-                                <rect key="frame" x="138" y="783" width="117" height="35"/>
+                                <rect key="frame" x="70" y="783" width="117" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
                                     <action selector="saveButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sSe-Se-ADP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8U6-vG-ozs">
+                                <rect key="frame" x="261" y="783" width="74" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="SgI-w8-bvv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LWi-MA-psk" firstAttribute="top" secondItem="MPI-hl-Mhj" secondAttribute="bottom" constant="21" id="4dg-ix-iya"/>
-                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jK-5s-TWO"/>
-                            <constraint firstItem="LWi-MA-psk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="QZD-Ki-Mhd"/>
-                            <constraint firstItem="LWi-MA-psk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="T9C-nX-rzK"/>
-                            <constraint firstItem="13s-cX-sWj" firstAttribute="top" secondItem="ttJ-h8-gYC" secondAttribute="bottom" constant="27" id="WCQ-15-OBM"/>
-                            <constraint firstItem="MPI-hl-Mhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ao5-zL-eRl"/>
-                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="leading" secondItem="13s-cX-sWj" secondAttribute="leading" id="bQV-tI-Rh9"/>
-                            <constraint firstItem="MPI-hl-Mhj" firstAttribute="top" secondItem="13s-cX-sWj" secondAttribute="bottom" constant="34" id="f5y-EF-zul"/>
-                            <constraint firstItem="MPI-hl-Mhj" firstAttribute="centerX" secondItem="LWi-MA-psk" secondAttribute="centerX" id="jNG-d4-Tiw"/>
-                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="pKv-yv-93m"/>
-                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="qMD-XS-NdQ"/>
-                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="trailing" secondItem="13s-cX-sWj" secondAttribute="trailing" id="rrt-h6-rYO"/>
-                            <constraint firstItem="13s-cX-sWj" firstAttribute="centerX" secondItem="MPI-hl-Mhj" secondAttribute="centerX" id="xVi-eu-rHD"/>
+                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6p-GX-XL3"/>
+                            <constraint firstItem="LWi-MA-psk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I53-tM-gRx"/>
+                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="KmG-Vd-Fc3"/>
+                            <constraint firstItem="LWi-MA-psk" firstAttribute="baseline" secondItem="8U6-vG-ozs" secondAttribute="baseline" id="NKc-ZN-Isf"/>
+                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="trailing" secondItem="13s-cX-sWj" secondAttribute="trailing" id="Quj-s9-oR8"/>
+                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="W5P-vc-I0w"/>
+                            <constraint firstItem="LWi-MA-psk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ZOW-PK-aWx"/>
+                            <constraint firstItem="LWi-MA-psk" firstAttribute="top" secondItem="MPI-hl-Mhj" secondAttribute="bottom" constant="21" id="cPN-W2-vHY"/>
+                            <constraint firstItem="ttJ-h8-gYC" firstAttribute="leading" secondItem="13s-cX-sWj" secondAttribute="leading" id="dC2-MD-2RS"/>
+                            <constraint firstItem="MPI-hl-Mhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oY4-vC-scU"/>
+                            <constraint firstItem="MPI-hl-Mhj" firstAttribute="top" secondItem="13s-cX-sWj" secondAttribute="bottom" constant="34" id="ozC-Tv-NYc"/>
+                            <constraint firstItem="13s-cX-sWj" firstAttribute="centerX" secondItem="MPI-hl-Mhj" secondAttribute="centerX" id="t7I-vc-rf1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8U6-vG-ozs" secondAttribute="trailing" constant="58" id="tln-HG-ers"/>
+                            <constraint firstItem="13s-cX-sWj" firstAttribute="top" secondItem="ttJ-h8-gYC" secondAttribute="bottom" constant="27" id="voz-9f-dVU"/>
+                            <constraint firstItem="8U6-vG-ozs" firstAttribute="leading" secondItem="LWi-MA-psk" secondAttribute="trailing" constant="74" id="xim-dd-4BZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aaJ-uP-vj9"/>
@@ -95,6 +105,7 @@
                         <outlet property="commentText" destination="13s-cX-sWj" id="cJL-be-f0S"/>
                         <outlet property="mapView" destination="MPI-hl-Mhj" id="ixW-3R-5MS"/>
                         <outlet property="nameText" destination="ttJ-h8-gYC" id="ekh-xa-ykK"/>
+                        <outlet property="saveButton" destination="LWi-MA-psk" id="Uxp-S3-6hH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,30 +9,57 @@ import MapKit
 import CoreLocation
 import CoreData
 
+<<<<<<< Updated upstream
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var commentText: UITextField!
     @IBOutlet weak var mapView: MKMapView!
+=======
+class ViewController: UIViewController {
+    @IBOutlet var nameText: UITextField!
+    @IBOutlet var commentText: UITextField!
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet var saveButton: UIButton!
+    @IBOutlet var deleteButton: UIButton!
+>>>>>>> Stashed changes
     
     var locationManager = CLLocationManager()
     var chosenLatitude = Double()
     var chosenLongitude = Double()
     
     var selectedTitle = ""
+<<<<<<< Updated upstream
     var selectedTitleId : UUID?
+=======
+    var selectedTitleId: UUID?
+    
+    var annotationTitle = ""
+    var annotationSubtitle = ""
+    var annotationLatitude = Double()
+    var annotationLongitude = Double()
+    var showDeleteButton = false;
+>>>>>>> Stashed changes
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         mapView.delegate = self
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
+<<<<<<< Updated upstream
         let gestureecognizer = UILongPressGestureRecognizer(target: self, action: #selector(chooseLocation(gestureRecognizer:)))
         gestureecognizer.minimumPressDuration = 2
         mapView.addGestureRecognizer(gestureecognizer)
+=======
+        
+        deleteButton.isHidden = !showDeleteButton
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(chooseLocation(gestureRecognizer:)))
+        mapView.addGestureRecognizer(gestureRecognizer)
+>>>>>>> Stashed changes
         
         if selectedTitle != "" {
             //Core Data
@@ -98,4 +125,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
 }
 
+<<<<<<< Updated upstream
 
+=======
+extension ViewController: MKMapViewDelegate, CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if selectedTitle == "" {
+            let location = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
+            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let region = MKCoordinateRegion(center: location, span: span)
+            mapView.setRegion(region, animated: true)
+        }
+    }
+}
+>>>>>>> Stashed changes
