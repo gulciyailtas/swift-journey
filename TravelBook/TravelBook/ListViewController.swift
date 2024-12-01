@@ -16,7 +16,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     var titleArray = [String]()
     var idArray = [UUID]()
     var chosenTitle = ""
+<<<<<<< Updated upstream
     var chosenTitleId : UUID?
+=======
+    var chosenTitleId: UUID?
+    var isFromTableSelection = false
+    var showDeleteButton = true
+>>>>>>> Stashed changes
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,12 +67,42 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
+    private func updatePlaceArrays(with results: [NSManagedObject]) {
+        titleArray = results.compactMap { $0.value(forKey: "title") as? String }
+        idArray = results.compactMap { $0.value(forKey: "id") as? UUID }
+        tableView.reloadData()
+    }
+    
     @objc func addButtonClicked() {
         chosenTitle = ""
+<<<<<<< Updated upstream
         performSegue(withIdentifier: "toViewController", sender: nil)
         
     }
     
+=======
+        chosenTitleId = nil
+        showDeleteButton = false
+        performSegue(withIdentifier: "toViewController", sender: showDeleteButton)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toViewController" {
+            let destinationVC = segue.destination as! ViewController
+            destinationVC.selectedTitle = chosenTitle
+            destinationVC.selectedTitleId = chosenTitleId
+            
+            // Read the `showDeleteButton` value from `sender`
+            if let showDeleteButton = sender as? Bool {
+                print("Show delete button: \(showDeleteButton)")
+                destinationVC.showDeleteButton = showDeleteButton
+            }
+        }
+    }
+}
+
+extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+>>>>>>> Stashed changes
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleArray.count
     }
@@ -76,10 +112,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.textLabel?.text = titleArray[indexPath.row]
         return cell
     }
-     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenTitle = titleArray[indexPath.row]
         chosenTitleId = idArray[indexPath.row]
+<<<<<<< Updated upstream
         performSegue(withIdentifier: "toViewController", sender: nil)
     }
     
@@ -89,5 +126,10 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             destinationVC.selectedTitle = chosenTitle
             destinationVC.selectedTitleId = chosenTitleId
         }
+=======
+        showDeleteButton = true
+        
+        performSegue(withIdentifier: "toViewController", sender: showDeleteButton)
+>>>>>>> Stashed changes
     }
 }

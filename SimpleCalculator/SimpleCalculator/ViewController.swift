@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()t
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
