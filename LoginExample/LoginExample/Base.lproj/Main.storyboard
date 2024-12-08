@@ -39,15 +39,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFy-hE-3G9">
-                                <rect key="frame" x="151" y="499" width="91" height="35"/>
+                                <rect key="frame" x="151" y="498.99999999999994" width="91" height="34.333333333333314"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
                                     <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="girisButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PdO-P9-uje"/>
+                                    <action selector="girisYapButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pv-eR-58L"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-UZ-GwS">
-                                <rect key="frame" x="76" y="556" width="241" height="128.66666666666663"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-UZ-GwS">
+                                <rect key="frame" x="76" y="555.33333333333337" width="241" height="128.66666666666663"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEe-21-hJ0">
                                         <rect key="frame" x="0.0" y="0.0" width="241" height="128.66666666666666"/>
@@ -70,6 +74,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
                                     <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="girisButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JsY-Rv-FgK"/>
+                                    <action selector="kayıtBı:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVc-qn-tdz"/>
+                                    <action selector="kayıtOlButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Kq-tA-P7J"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="nxg-eC-V6h">
                                 <rect key="frame" x="0.0" y="102" width="393" height="168"/>
@@ -103,10 +112,85 @@
                             <constraint firstItem="GUF-zB-shL" firstAttribute="top" secondItem="L1J-UZ-GwS" secondAttribute="bottom" constant="44.666666666666515" id="z5a-6i-cYM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButtonTapped" destination="tFy-hE-3G9" id="q6i-Zg-cZZ"/>
+                        <outlet property="mailTextField" destination="G6y-F2-Hvi" id="2Db-Zk-tDD"/>
+                        <outlet property="passwordTextField" destination="lfB-Vr-nXC" id="puc-ua-m9c"/>
+                        <outlet property="registerButtonTapped" destination="GUF-zB-shL" id="8b6-aK-D8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4nb-r2-YBj">
+            <objects>
+                <viewController id="MEO-bE-Lav" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Br-AV-V89">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mail Adresi" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kBT-me-GLv">
+                                <rect key="frame" x="0.0" y="344" width="393" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameTextField" destination="2fe-Wg-D9F" eventType="editingDidEnd" id="iUU-7O-GAm"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kayıt Ol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9z-Oc-qW3">
+                                <rect key="frame" x="144" y="124" width="104" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Parola" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WIa-MD-hyj">
+                                <rect key="frame" x="0.0" y="409" width="393" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rku-XI-XdL">
+                                <rect key="frame" x="136" y="540" width="120" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol">
+                                    <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kayıtButtonClicked:" destination="2fe-Wg-D9F" eventType="touchUpInside" id="yug-LW-ATk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kullanıcı Adı" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-E4-95r">
+                                <rect key="frame" x="0.0" y="279" width="393" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailTextField:" destination="2fe-Wg-D9F" eventType="editingDidEnd" id="7nC-kI-0wp"/>
+                                    <action selector="nameTextField:" destination="2fe-Wg-D9F" eventType="editingDidEnd" id="YkR-jV-xRP"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aZL-7a-ihn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8CT-U2-6LY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDS-0g-2Es" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2fe-Wg-D9F" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="841.9847328244274" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
@@ -115,13 +199,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
