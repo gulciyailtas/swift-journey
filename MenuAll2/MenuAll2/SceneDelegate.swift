@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  MenuAl
+//  MenuAll2
 //
-//  Created by Gülçiya İltaş on 7.12.2024.
+//  Created by Gülçiya İltaş on 10.12.2024.
 //
 
 import UIKit
@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = UINavigationController(rootViewController: LoginVC())
         window?.makeKeyAndVisible()
+    }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -52,5 +53,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
+
 
