@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		39F540742D048FB70032C840 /* MenuAl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuAl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		390C561C2D0880040060DF3F /* MenuAll2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuAll2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		39F540862D048FB80032C840 /* Exceptions for "MenuAl" folder in "MenuAl" target */ = {
+		390C562E2D0880050060DF3F /* Exceptions for "MenuAll2" folder in "MenuAll2" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 39F540732D048FB70032C840 /* MenuAl */;
+			target = 390C561B2D0880040060DF3F /* MenuAll2 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		39F540762D048FB70032C840 /* MenuAl */ = {
+		390C561E2D0880040060DF3F /* MenuAll2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				39F540862D048FB80032C840 /* Exceptions for "MenuAl" folder in "MenuAl" target */,
+				390C562E2D0880050060DF3F /* Exceptions for "MenuAll2" folder in "MenuAll2" target */,
 			);
-			path = MenuAl;
+			path = MenuAll2;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		39F540712D048FB70032C840 /* Frameworks */ = {
+		390C56192D0880040060DF3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39F5406B2D048FB70032C840 = {
+		390C56132D0880030060DF3F = {
 			isa = PBXGroup;
 			children = (
-				39F540762D048FB70032C840 /* MenuAl */,
-				39F540752D048FB70032C840 /* Products */,
+				390C561E2D0880040060DF3F /* MenuAll2 */,
+				390C561D2D0880040060DF3F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		39F540752D048FB70032C840 /* Products */ = {
+		390C561D2D0880040060DF3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				39F540742D048FB70032C840 /* MenuAl.app */,
+				390C561C2D0880040060DF3F /* MenuAll2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		39F540732D048FB70032C840 /* MenuAl */ = {
+		390C561B2D0880040060DF3F /* MenuAll2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39F540872D048FB80032C840 /* Build configuration list for PBXNativeTarget "MenuAl" */;
+			buildConfigurationList = 390C562F2D0880050060DF3F /* Build configuration list for PBXNativeTarget "MenuAll2" */;
 			buildPhases = (
-				39F540702D048FB70032C840 /* Sources */,
-				39F540712D048FB70032C840 /* Frameworks */,
-				39F540722D048FB70032C840 /* Resources */,
+				390C56182D0880040060DF3F /* Sources */,
+				390C56192D0880040060DF3F /* Frameworks */,
+				390C561A2D0880040060DF3F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				39F540762D048FB70032C840 /* MenuAl */,
+				390C561E2D0880040060DF3F /* MenuAll2 */,
 			);
-			name = MenuAl;
+			name = MenuAll2;
 			packageProductDependencies = (
 			);
-			productName = MenuAl;
-			productReference = 39F540742D048FB70032C840 /* MenuAl.app */;
+			productName = MenuAll2;
+			productReference = 390C561C2D0880040060DF3F /* MenuAll2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		39F5406C2D048FB70032C840 /* Project object */ = {
+		390C56142D0880030060DF3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					39F540732D048FB70032C840 = {
+					390C561B2D0880040060DF3F = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 39F5406F2D048FB70032C840 /* Build configuration list for PBXProject "MenuAl" */;
+			buildConfigurationList = 390C56172D0880030060DF3F /* Build configuration list for PBXProject "MenuAll2" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 39F5406B2D048FB70032C840;
+			mainGroup = 390C56132D0880030060DF3F;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 39F540752D048FB70032C840 /* Products */;
+			productRefGroup = 390C561D2D0880040060DF3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				39F540732D048FB70032C840 /* MenuAl */,
+				390C561B2D0880040060DF3F /* MenuAll2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		39F540722D048FB70032C840 /* Resources */ = {
+		390C561A2D0880040060DF3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		39F540702D048FB70032C840 /* Sources */ = {
+		390C56182D0880040060DF3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		39F540882D048FB80032C840 /* Debug */ = {
+		390C56302D0880050060DF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GWTW3C7JM5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MenuAl/Info.plist;
+				INFOPLIST_FILE = MenuAll2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -157,7 +157,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gulciyailtas.MenuAl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gulciyailtas.MenuAll2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -165,7 +165,7 @@
 			};
 			name = Debug;
 		};
-		39F540892D048FB80032C840 /* Release */ = {
+		390C56312D0880050060DF3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -174,7 +174,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GWTW3C7JM5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MenuAl/Info.plist;
+				INFOPLIST_FILE = MenuAll2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -184,7 +184,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gulciyailtas.MenuAl;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gulciyailtas.MenuAll2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -192,7 +192,7 @@
 			};
 			name = Release;
 		};
-		39F5408A2D048FB80032C840 /* Debug */ = {
+		390C56322D0880050060DF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		39F5408B2D048FB80032C840 /* Release */ = {
+		390C56332D0880050060DF3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,25 +314,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39F5406F2D048FB70032C840 /* Build configuration list for PBXProject "MenuAl" */ = {
+		390C56172D0880030060DF3F /* Build configuration list for PBXProject "MenuAll2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39F5408A2D048FB80032C840 /* Debug */,
-				39F5408B2D048FB80032C840 /* Release */,
+				390C56322D0880050060DF3F /* Debug */,
+				390C56332D0880050060DF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39F540872D048FB80032C840 /* Build configuration list for PBXNativeTarget "MenuAl" */ = {
+		390C562F2D0880050060DF3F /* Build configuration list for PBXNativeTarget "MenuAll2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39F540882D048FB80032C840 /* Debug */,
-				39F540892D048FB80032C840 /* Release */,
+				390C56302D0880050060DF3F /* Debug */,
+				390C56312D0880050060DF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 39F5406C2D048FB70032C840 /* Project object */;
+	rootObject = 390C56142D0880030060DF3F /* Project object */;
 }

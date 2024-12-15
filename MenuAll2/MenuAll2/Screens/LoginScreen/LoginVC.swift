@@ -1,29 +1,30 @@
 //
 //  LoginVC.swift
-//  MenuAl
+//  MenuAll2
 //
-//  Created by Gülçiya İltaş on 7.12.2024.
+//  Created by Gülçiya İltaş on 11.12.2024.
 //
 
 import UIKit
 
 class LoginVC: UIViewController {
-    @IBOutlet var emailTextField: UITextField!
-    @IBOutlet var passwordTextField: UITextField!
-    @IBOutlet var forgotPasswordButtonLabel: UILabel!
-
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var forgotPasswordButtonLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareEmailTextField()
-        preparePasswordTextField()
+        preparepasswordTextField()
         prepareForgotPasswordLabel()
     }
-
+    
     @IBAction func loginButtonClicked(_ sender: Any) {
         print("Email Adresi: \(emailTextField.text)")
         print("Şifresi: \(passwordTextField.text)")
         navigationController?.pushViewController(HomePageVC(), animated: true)
     }
+    
     
     private func prepareEmailTextField() {
         emailTextField.layer.cornerRadius = 10
@@ -48,9 +49,10 @@ class LoginVC: UIViewController {
         
         emailTextField.leftView = imageContainer
         emailTextField.leftViewMode = .always
+        
     }
     
-    private func preparePasswordTextField() {
+    private func preparepasswordTextField() {
         passwordTextField.layer.cornerRadius = 10
         passwordTextField.clipsToBounds = true
         passwordTextField.layer.borderWidth = 1
@@ -71,7 +73,7 @@ class LoginVC: UIViewController {
         passwordLeftImage.trailingAnchor.constraint(equalTo: imageContainer.trailingAnchor).isActive = true
         passwordLeftImage.topAnchor.constraint(equalTo: imageContainer.topAnchor).isActive = true
         passwordLeftImage.bottomAnchor.constraint(equalTo: imageContainer.bottomAnchor).isActive = true
-
+        
         passwordTextField.leftView = imageContainer
         passwordTextField.leftViewMode = .always
     }
@@ -81,4 +83,6 @@ class LoginVC: UIViewController {
         let underlineAttributedString = NSAttributedString(string: "Forgot password?", attributes: underlineAttribute)
         forgotPasswordButtonLabel.attributedText = underlineAttributedString
     }
+    
+    
 }
