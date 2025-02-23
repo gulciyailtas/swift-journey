@@ -57,7 +57,7 @@ class LoginVC: UIViewController {
         passwordTextField.layer.borderColor = UIColor(named: "grayText")?.withAlphaComponent(0.5).cgColor
         passwordTextField.isSecureTextEntry = true
         passwordTextField.placeholder = "Şifre giriniz..."
-        
+
         let imageContainer = UIView()
         imageContainer.translatesAutoresizingMaskIntoConstraints = false
         imageContainer.backgroundColor = .clear

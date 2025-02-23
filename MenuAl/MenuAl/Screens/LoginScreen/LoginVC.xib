@@ -32,7 +32,7 @@
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N47-dZ-Mh5" userLabel="emailTextField">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="46"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="46" id="9Ti-pg-TFa"/>
+                            <constraint firstAttribute="height" priority="749" constant="46" id="9Ti-pg-TFa"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -40,7 +40,7 @@
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NoC-qE-xXT" userLabel="passwordTextField">
                             <rect key="frame" x="0.0" y="66" width="353" height="46"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="46" id="EC1-bR-lUA"/>
+                              <constraint firstAttribute="height" priority="749" constant="46" id="EC1-bR-lUA"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
