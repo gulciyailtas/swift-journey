@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "task_group_picker_icon.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,37 +1,36 @@
 //
 //  LoginVC.swift
-//  MenuAll2
+//  MenuAll3
 //
-//  Created by Gülçiya İltaş on 11.12.2024.
+//  Created by Gülçiya İltaş on 22.12.2024.
 //
 
 import UIKit
 
 class LoginVC: UIViewController {
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var forgetPasswordButtonLabel: UILabel!
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var forgotPasswordButtonLabel: UILabel!
-    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareEmailTextField()
-        preparepasswordTextField()
+        preparePasswordTextField()
         prepareForgotPasswordLabel()
     }
-    
+
     @IBAction func loginButtonClicked(_ sender: Any) {
         print("Email Adresi: \(emailTextField.text)")
         print("Şifresi: \(passwordTextField.text)")
         navigationController?.pushViewController(HomePageVC(), animated: true)
     }
     
-    
     private func prepareEmailTextField() {
         emailTextField.layer.cornerRadius = 10
         emailTextField.clipsToBounds = true
         emailTextField.layer.borderWidth = 1
-        emailTextField.layer.borderColor = UIColor(named: "grayText")?.withAlphaComponent(0.5).cgColor
-        emailTextField.placeholder = "Email giriniz..."
+        emailTextField.layer.borderColor = UIColor(named: "GrayText")?.withAlphaComponent(0.5).cgColor
+        emailTextField.placeholder = "Email Giriniz..."
         
         let imageContainer = UIView()
         imageContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -51,13 +50,12 @@ class LoginVC: UIViewController {
         emailTextField.leftViewMode = .always
     }
     
-    private func preparepasswordTextField() {
+    private func preparePasswordTextField() {
         passwordTextField.layer.cornerRadius = 10
         passwordTextField.clipsToBounds = true
         passwordTextField.layer.borderWidth = 1
-        passwordTextField.layer.borderColor = UIColor(named: "grayText")?.withAlphaComponent(0.5).cgColor
-        passwordTextField.isSecureTextEntry = true
-        passwordTextField.placeholder = "Şifre giriniz..."
+        passwordTextField.layer.borderColor = UIColor(named: "GrayText")?.withAlphaComponent(0.5).cgColor
+        passwordTextField.placeholder = "Şifre Giriniz..."
         
         let imageContainer = UIView()
         imageContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -80,8 +78,6 @@ class LoginVC: UIViewController {
     private func prepareForgotPasswordLabel() {
         let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
         let underlineAttributedString = NSAttributedString(string: "Forgot password?", attributes: underlineAttribute)
-        forgotPasswordButtonLabel.attributedText = underlineAttributedString
+        forgetPasswordButtonLabel.attributedText = underlineAttributedString
     }
-    
-    
 }
