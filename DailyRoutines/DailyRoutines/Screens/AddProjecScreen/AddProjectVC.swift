@@ -8,6 +8,14 @@
 import UIKit
 
 class AddProjectVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        <#code#>
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+    
     
     
     @IBOutlet weak var selectTaskPickerButton: UIButton!
