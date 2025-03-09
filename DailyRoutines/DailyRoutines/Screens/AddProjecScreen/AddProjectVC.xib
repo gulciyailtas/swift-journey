@@ -16,7 +16,6 @@
                 <outlet property="backgroundView" destination="EhW-81-O31" id="v89-f1-Kvf"/>
                 <outlet property="descriptionLabel" destination="EN6-6K-CQu" id="tho-pr-gG9"/>
                 <outlet property="projectNameLabel" destination="7xs-80-NER" id="RgQ-PV-EY5"/>
-                <outlet property="selectDataO" destination="EI2-Vd-Dgc" id="849-g4-jEp"/>
                 <outlet property="selectDataPickerButton" destination="EI2-Vd-Dgc" id="fpT-YC-XVf"/>
                 <outlet property="selectDataPickerStartHistoryLabel" destination="9fJ-l3-9b8" id="V8H-Di-xfl"/>
                 <outlet property="selectDataPickerStartLabel" destination="YLL-UL-piN" id="8RH-kY-57b"/>
@@ -101,6 +100,8 @@
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="65D-2m-Enr"/>
+                        <constraint firstItem="7xs-80-NER" firstAttribute="leading" secondItem="3hy-Rh-ymF" secondAttribute="leading" constant="16" id="daE-88-Bdi"/>
+                        <constraint firstItem="7xs-80-NER" firstAttribute="top" secondItem="3hy-Rh-ymF" secondAttribute="top" constant="16" id="waM-l0-RDI"/>
                         <constraint firstAttribute="width" priority="749" id="yLb-mV-G0v"/>
                     </constraints>
                 </stackView>
@@ -182,6 +183,14 @@
                         <constraint firstItem="SZM-pB-J0c" firstAttribute="centerY" secondItem="EI2-Vd-Dgc" secondAttribute="centerY" id="jZ6-tt-V1t"/>
                         <constraint firstItem="0hA-xc-mRO" firstAttribute="leading" secondItem="SZM-pB-J0c" secondAttribute="trailing" constant="12" id="kUh-FN-c7e"/>
                     </constraints>
+                    <connections>
+                        <action selector="prepareStartDatePicker:" destination="-1" eventType="valueChanged" id="XZB-Vu-Rjo"/>
+                        <action selector="selectDateAction:" destination="-1" eventType="valueChanged" id="t17-DL-mFl"/>
+                        <action selector="selectDatePickerAction:" destination="-1" eventType="valueChanged" id="Q9l-D7-38u"/>
+                        <action selector="selectTaskDatePicker:" destination="-1" eventType="valueChanged" id="N23-K7-Ctg"/>
+                        <action selector="selectTaskPicker:" destination="-1" eventType="valueChanged" id="a21-tM-T79"/>
+                        <action selector="selectTaskPickerAction:" destination="-1" eventType="valueChanged" id="ZMJ-qR-6eK"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDO-Pm-97Z" customClass="UIButton">
                     <rect key="frame" x="22" y="505" width="349" height="60"/>
@@ -232,6 +241,9 @@
                         <constraint firstAttribute="trailing" secondItem="OyY-Fq-UGQ" secondAttribute="trailing" constant="16" id="h0J-Gp-Gfm"/>
                         <constraint firstAttribute="height" constant="60" id="xgB-7c-b7x"/>
                     </constraints>
+                    <connections>
+                        <action selector="selectTaskEndDataPicker:" destination="-1" eventType="valueChanged" id="Oyg-Tk-aXy"/>
+                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
