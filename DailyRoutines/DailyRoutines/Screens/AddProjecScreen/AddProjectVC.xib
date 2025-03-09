@@ -11,11 +11,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProjectVC" customModule="DailyRoutines" customModuleProvider="target">
             <connections>
-                <outlet property="appName" destination="hw7-qe-WnM" id="78C-AJ-pXf"/>
+                <outlet property="SelectEndDateLabel" destination="onL-QT-igZ" id="Kqx-6f-Vw5"/>
                 <outlet property="appNameLabel" destination="hw7-qe-WnM" id="Yve-D1-41u"/>
                 <outlet property="backgroundView" destination="EhW-81-O31" id="v89-f1-Kvf"/>
                 <outlet property="descriptionLabel" destination="EN6-6K-CQu" id="tho-pr-gG9"/>
                 <outlet property="projectNameLabel" destination="7xs-80-NER" id="RgQ-PV-EY5"/>
+                <outlet property="selectDataPickerButton" destination="EI2-Vd-Dgc" id="fpT-YC-XVf"/>
+                <outlet property="selectDataPickerStartHistoryLabel" destination="9fJ-l3-9b8" id="V8H-Di-xfl"/>
+                <outlet property="selectDataPickerStartLabel" destination="YLL-UL-piN" id="8RH-kY-57b"/>
+                <outlet property="selectEndHistoryLabel" destination="3mh-q6-413" id="X6L-SZ-XuJ"/>
+                <outlet property="selectTaskDatePickerButton" destination="vDO-Pm-97Z" id="852-ze-22F"/>
                 <outlet property="selectTaskPickerButton" destination="Tys-WR-o8L" id="oN2-jQ-s8O"/>
                 <outlet property="selectTaskPickerContentButton" destination="5qn-6a-yO8" id="LZe-t5-4M2"/>
                 <outlet property="selectTaskPickerTitleButton" destination="Tys-WR-o8L" id="QF7-be-Fbh"/>
@@ -29,23 +34,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Quz-TA-kOt" customClass="UIButton">
-                    <rect key="frame" x="22" y="87" width="349" height="63.333333333333343"/>
+                    <rect key="frame" x="22" y="87" width="349" height="60"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task_group_picker_icon" translatesAutoresizingMaskIntoConstraints="NO" id="07w-hw-eKx">
                             <rect key="frame" x="16" y="18" width="24" height="24"/>
                         </imageView>
                         <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hZZ-J8-ifK">
-                            <rect key="frame" x="48" y="15.999999999999998" width="41.333333333333343" height="31.333333333333329"/>
+                            <rect key="frame" x="48" y="16" width="35.333333333333343" height="28"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tys-WR-o8L" userLabel="titleLabel">
-                                    <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="11"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="11"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                     <color key="textColor" name="primaryGray"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qn-6a-yO8" userLabel="contentLabel">
-                                    <rect key="frame" x="0.0" y="10.999999999999998" width="41.333333333333336" height="20.333333333333329"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="0.0" y="11" width="35.333333333333336" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" name="blackColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -71,14 +76,14 @@
                     </connections>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-81-O31" userLabel=" backgroundView">
-                    <rect key="frame" x="22" y="174.33333333333334" width="349" height="60"/>
+                    <rect key="frame" x="22" y="171" width="349" height="60"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="8p5-xB-UOe"/>
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-Rh-ymF">
-                    <rect key="frame" x="22" y="174.33333333333334" width="349" height="60"/>
+                    <rect key="frame" x="22" y="171" width="349" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xs-80-NER" userLabel="projectNameLabel">
                             <rect key="frame" x="0.0" y="0.0" width="349" height="39.666666666666664"/>
@@ -95,11 +100,13 @@
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="65D-2m-Enr"/>
+                        <constraint firstItem="7xs-80-NER" firstAttribute="leading" secondItem="3hy-Rh-ymF" secondAttribute="leading" constant="16" id="daE-88-Bdi"/>
+                        <constraint firstItem="7xs-80-NER" firstAttribute="top" secondItem="3hy-Rh-ymF" secondAttribute="top" constant="16" id="waM-l0-RDI"/>
                         <constraint firstAttribute="width" priority="749" id="yLb-mV-G0v"/>
                     </constraints>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oH1-Bt-ekp">
-                    <rect key="frame" x="22" y="258.33333333333331" width="349" height="142"/>
+                    <rect key="frame" x="22" y="255" width="349" height="142"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-fA-mpf">
                             <rect key="frame" x="0.0" y="0.0" width="349" height="142"/>
@@ -132,23 +139,23 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EI2-Vd-Dgc" customClass="UIButton">
-                    <rect key="frame" x="22" y="424.33333333333331" width="349" height="60"/>
+                    <rect key="frame" x="22" y="421" width="349" height="60"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="export_calendar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="SZM-pB-J0c">
                             <rect key="frame" x="16" y="18" width="24" height="24"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0hA-xc-mRO">
-                            <rect key="frame" x="52" y="9.6666666666666856" width="41.333333333333343" height="40.666666666666664"/>
+                            <rect key="frame" x="51.999999999999993" y="18" width="28.666666666666664" height="24.333333333333329"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-UL-piN">
-                                    <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-UL-piN" userLabel="startDateLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="28.666666666666668" height="11"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fJ-l3-9b8">
-                                    <rect key="frame" x="0.0" y="20.333333333333314" width="41.333333333333336" height="20.333333333333329"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fJ-l3-9b8" userLabel="startHistoryLabel">
+                                    <rect key="frame" x="0.0" y="11" width="28.666666666666668" height="13.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -158,38 +165,55 @@
                                 <constraint firstAttribute="height" priority="749" id="Ocr-FN-dJn"/>
                             </constraints>
                         </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="pIv-TV-qw1">
+                            <rect key="frame" x="309" y="18" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pIv-TV-qw1" secondAttribute="height" id="W3i-N7-bbJ"/>
+                                <constraint firstAttribute="width" constant="24" id="dOH-CY-7jn"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pIv-TV-qw1" secondAttribute="trailing" constant="16" id="7gV-Bg-MIH"/>
                         <constraint firstItem="SZM-pB-J0c" firstAttribute="leading" secondItem="EI2-Vd-Dgc" secondAttribute="leading" constant="16" id="Xja-Zm-juT"/>
+                        <constraint firstItem="pIv-TV-qw1" firstAttribute="centerY" secondItem="EI2-Vd-Dgc" secondAttribute="centerY" id="XnS-eB-bu0"/>
                         <constraint firstItem="0hA-xc-mRO" firstAttribute="centerY" secondItem="EI2-Vd-Dgc" secondAttribute="centerY" id="hCk-lW-3H7"/>
                         <constraint firstAttribute="height" constant="60" id="hYm-Uq-DeG"/>
                         <constraint firstItem="SZM-pB-J0c" firstAttribute="centerY" secondItem="EI2-Vd-Dgc" secondAttribute="centerY" id="jZ6-tt-V1t"/>
                         <constraint firstItem="0hA-xc-mRO" firstAttribute="leading" secondItem="SZM-pB-J0c" secondAttribute="trailing" constant="12" id="kUh-FN-c7e"/>
                     </constraints>
+                    <connections>
+                        <action selector="prepareStartDatePicker:" destination="-1" eventType="valueChanged" id="XZB-Vu-Rjo"/>
+                        <action selector="selectDateAction:" destination="-1" eventType="valueChanged" id="t17-DL-mFl"/>
+                        <action selector="selectDatePickerAction:" destination="-1" eventType="valueChanged" id="Q9l-D7-38u"/>
+                        <action selector="selectTaskDatePicker:" destination="-1" eventType="valueChanged" id="N23-K7-Ctg"/>
+                        <action selector="selectTaskPicker:" destination="-1" eventType="valueChanged" id="a21-tM-T79"/>
+                        <action selector="selectTaskPickerAction:" destination="-1" eventType="valueChanged" id="ZMJ-qR-6eK"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDO-Pm-97Z" customClass="UIButton">
-                    <rect key="frame" x="22" y="508.33333333333326" width="349" height="60"/>
+                    <rect key="frame" x="22" y="505" width="349" height="60"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="export_calendar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="9yD-iP-NJ4">
-                            <rect key="frame" x="16" y="18.000000000000057" width="24" height="24"/>
+                            <rect key="frame" x="16" y="18" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="9yD-iP-NJ4" secondAttribute="height" id="3eP-g2-8WY"/>
                                 <constraint firstAttribute="width" constant="24" id="BAd-5K-Fqj"/>
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7uI-T3-4HL">
-                            <rect key="frame" x="52" y="9.6666666666666856" width="41.333333333333343" height="40.666666666666664"/>
+                            <rect key="frame" x="52" y="16" width="35.333333333333343" height="28"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onL-QT-igZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onL-QT-igZ" userLabel="endDateLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="35.333333333333336" height="11"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-q6-413">
-                                    <rect key="frame" x="0.0" y="20.333333333333371" width="41.333333333333336" height="20.333333333333329"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-q6-413" userLabel="endHistoryLabel">
+                                    <rect key="frame" x="0.0" y="11" width="35.333333333333336" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -200,7 +224,7 @@
                             </constraints>
                         </stackView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="OyY-Fq-UGQ">
-                            <rect key="frame" x="309" y="18.000000000000057" width="24" height="24"/>
+                            <rect key="frame" x="309" y="18" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="24" id="ZK5-1d-Ntt"/>
                                 <constraint firstAttribute="width" secondItem="OyY-Fq-UGQ" secondAttribute="height" id="iFn-2d-y0z"/>
@@ -217,6 +241,9 @@
                         <constraint firstAttribute="trailing" secondItem="OyY-Fq-UGQ" secondAttribute="trailing" constant="16" id="h0J-Gp-Gfm"/>
                         <constraint firstAttribute="height" constant="60" id="xgB-7c-b7x"/>
                     </constraints>
+                    <connections>
+                        <action selector="selectTaskEndDataPicker:" destination="-1" eventType="valueChanged" id="Oyg-Tk-aXy"/>
+                    </connections>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
