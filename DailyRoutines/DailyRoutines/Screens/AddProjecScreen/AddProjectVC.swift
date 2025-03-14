@@ -24,7 +24,7 @@ class AddProjectVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     @IBOutlet var selectEndHistoryLabel: UILabel!
     
     private let pickerView = UIPickerView()
-    private let options = ["Java", "Swift", "Kotlin", "Pyhton", "C#"]
+    private let options = ["Work", "Personal", "Health", "Hobby"]
     private let selectedTask: String? = nil
     private let startDatePicker = UIDatePicker()
     private let endDatePicker = UIPickerView()
@@ -168,5 +168,6 @@ class AddProjectVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("Seçilen dil: \(options[row])")
     }
+    
 }
    
