@@ -73,6 +73,7 @@
                     </constraints>
                     <connections>
                         <action selector="selectTaskPickerAction:" destination="-1" eventType="valueChanged" id="Kaf-ux-f43"/>
+                        <action selector="selectTaskPickerAction:" destination="-1" eventType="touchDown" id="h7d-Fl-2cx"/>
                     </connections>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-81-O31" userLabel=" backgroundView">
@@ -188,6 +189,7 @@
                         <action selector="selectDateAction:" destination="-1" eventType="valueChanged" id="t17-DL-mFl"/>
                         <action selector="selectDatePickerAction:" destination="-1" eventType="valueChanged" id="Q9l-D7-38u"/>
                         <action selector="selectTaskDatePicker:" destination="-1" eventType="valueChanged" id="N23-K7-Ctg"/>
+                        <action selector="selectTaskDatePicker:" destination="-1" eventType="touchDown" id="f5E-U2-yci"/>
                         <action selector="selectTaskPicker:" destination="-1" eventType="valueChanged" id="a21-tM-T79"/>
                         <action selector="selectTaskPickerAction:" destination="-1" eventType="valueChanged" id="ZMJ-qR-6eK"/>
                     </connections>
@@ -242,6 +244,7 @@
                         <constraint firstAttribute="height" constant="60" id="xgB-7c-b7x"/>
                     </constraints>
                     <connections>
+                        <action selector="selectTaskEndDataPicker:" destination="-1" eventType="touchDown" id="FbY-2h-cvN"/>
                         <action selector="selectTaskEndDataPicker:" destination="-1" eventType="valueChanged" id="Oyg-Tk-aXy"/>
                     </connections>
                 </view>
