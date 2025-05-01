@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		393D54152DBED73700989D59 /* I am Rich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I am Rich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EFE47A2DC2AA130040F5A7 /* IAmPoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAmPoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		393D54272DBED73800989D59 /* Exceptions for "I am Rich" folder in "I am Rich" target */ = {
+		39EFE48C2DC2AA140040F5A7 /* Exceptions for "IAmPoor" folder in "IAmPoor" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 393D54142DBED73700989D59 /* I am Rich */;
+			target = 39EFE4792DC2AA130040F5A7 /* IAmPoor */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		393D54172DBED73700989D59 /* I am Rich */ = {
+		39EFE47C2DC2AA130040F5A7 /* IAmPoor */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				393D54272DBED73800989D59 /* Exceptions for "I am Rich" folder in "I am Rich" target */,
+				39EFE48C2DC2AA140040F5A7 /* Exceptions for "IAmPoor" folder in "IAmPoor" target */,
 			);
-			path = "I am Rich";
+			path = IAmPoor;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		393D54122DBED73700989D59 /* Frameworks */ = {
+		39EFE4772DC2AA130040F5A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		393D540C2DBED73700989D59 = {
+		39EFE4712DC2AA130040F5A7 = {
 			isa = PBXGroup;
 			children = (
-				393D54172DBED73700989D59 /* I am Rich */,
-				393D54162DBED73700989D59 /* Products */,
+				39EFE47C2DC2AA130040F5A7 /* IAmPoor */,
+				39EFE47B2DC2AA130040F5A7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		393D54162DBED73700989D59 /* Products */ = {
+		39EFE47B2DC2AA130040F5A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				393D54152DBED73700989D59 /* I am Rich.app */,
+				39EFE47A2DC2AA130040F5A7 /* IAmPoor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		393D54142DBED73700989D59 /* I am Rich */ = {
+		39EFE4792DC2AA130040F5A7 /* IAmPoor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 393D54282DBED73800989D59 /* Build configuration list for PBXNativeTarget "I am Rich" */;
+			buildConfigurationList = 39EFE48D2DC2AA140040F5A7 /* Build configuration list for PBXNativeTarget "IAmPoor" */;
 			buildPhases = (
-				393D54112DBED73700989D59 /* Sources */,
-				393D54122DBED73700989D59 /* Frameworks */,
-				393D54132DBED73700989D59 /* Resources */,
+				39EFE4762DC2AA130040F5A7 /* Sources */,
+				39EFE4772DC2AA130040F5A7 /* Frameworks */,
+				39EFE4782DC2AA130040F5A7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				393D54172DBED73700989D59 /* I am Rich */,
+				39EFE47C2DC2AA130040F5A7 /* IAmPoor */,
 			);
-			name = "I am Rich";
+			name = IAmPoor;
 			packageProductDependencies = (
 			);
-			productName = "I am Rich";
-			productReference = 393D54152DBED73700989D59 /* I am Rich.app */;
+			productName = IAmPoor;
+			productReference = 39EFE47A2DC2AA130040F5A7 /* IAmPoor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		393D540D2DBED73700989D59 /* Project object */ = {
+		39EFE4722DC2AA130040F5A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					393D54142DBED73700989D59 = {
+					39EFE4792DC2AA130040F5A7 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 393D54102DBED73700989D59 /* Build configuration list for PBXProject "I am Rich" */;
+			buildConfigurationList = 39EFE4752DC2AA130040F5A7 /* Build configuration list for PBXProject "IAmPoor" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 393D540C2DBED73700989D59;
+			mainGroup = 39EFE4712DC2AA130040F5A7;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 393D54162DBED73700989D59 /* Products */;
+			productRefGroup = 39EFE47B2DC2AA130040F5A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				393D54142DBED73700989D59 /* I am Rich */,
+				39EFE4792DC2AA130040F5A7 /* IAmPoor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		393D54132DBED73700989D59 /* Resources */ = {
+		39EFE4782DC2AA130040F5A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		393D54112DBED73700989D59 /* Sources */ = {
+		39EFE4762DC2AA130040F5A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		393D54292DBED73800989D59 /* Debug */ = {
+		39EFE48E2DC2AA140040F5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GWTW3C7JM5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "I am Rich/Info.plist";
+				INFOPLIST_FILE = IAmPoor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gulciyailtas.I-am-Rich";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gulciyailtas.IAmPoor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -166,7 +166,7 @@
 			};
 			name = Debug;
 		};
-		393D542A2DBED73800989D59 /* Release */ = {
+		39EFE48F2DC2AA140040F5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -175,7 +175,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GWTW3C7JM5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "I am Rich/Info.plist";
+				INFOPLIST_FILE = IAmPoor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -186,7 +186,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gulciyailtas.I-am-Rich";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gulciyailtas.IAmPoor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -194,7 +194,7 @@
 			};
 			name = Release;
 		};
-		393D542B2DBED73800989D59 /* Debug */ = {
+		39EFE4902DC2AA140040F5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		393D542C2DBED73800989D59 /* Release */ = {
+		39EFE4912DC2AA140040F5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		393D54102DBED73700989D59 /* Build configuration list for PBXProject "I am Rich" */ = {
+		39EFE4752DC2AA130040F5A7 /* Build configuration list for PBXProject "IAmPoor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				393D542B2DBED73800989D59 /* Debug */,
-				393D542C2DBED73800989D59 /* Release */,
+				39EFE4902DC2AA140040F5A7 /* Debug */,
+				39EFE4912DC2AA140040F5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		393D54282DBED73800989D59 /* Build configuration list for PBXNativeTarget "I am Rich" */ = {
+		39EFE48D2DC2AA140040F5A7 /* Build configuration list for PBXNativeTarget "IAmPoor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				393D54292DBED73800989D59 /* Debug */,
-				393D542A2DBED73800989D59 /* Release */,
+				39EFE48E2DC2AA140040F5A7 /* Debug */,
+				39EFE48F2DC2AA140040F5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 393D540D2DBED73700989D59 /* Project object */;
+	rootObject = 39EFE4722DC2AA130040F5A7 /* Project object */;
 }

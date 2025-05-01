@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  I am Rich
+//  IAmPoor
 //
-//  Created by Gülçiya İltaş on 28.04.2025.
+//  Created by Gülçiya İltaş on 30.04.2025.
 //
 
 import UIKit
