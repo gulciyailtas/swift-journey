@@ -64,7 +64,7 @@
 				AD9CB08D23017BC300B0C390 /* LaunchScreen.storyboard */,
 				AD9CB09023017BC300B0C390 /* Info.plist */,
 			);
-			path = "I Am Rich";
+			path = "IAmRich";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +292,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWTW3C7JM5;
-				INFOPLIST_FILE = "I Am Rich/Info.plist";
+				INFOPLIST_FILE = "IAmRich/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +313,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWTW3C7JM5;
-				INFOPLIST_FILE = "I Am Rich/Info.plist";
+				INFOPLIST_FILE = "IAmRich/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
