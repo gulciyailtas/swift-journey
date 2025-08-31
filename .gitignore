@@ -1,2 +1,5 @@
 # Xcode specific files
 **/*.xcuserstate
+
+#intellij specific files
+.idea/
