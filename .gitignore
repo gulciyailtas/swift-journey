@@ -1,5 +1,14 @@
 # Xcode specific files
 **/*.xcuserstate
 
-#intellij specific files
+# IntelliJ
 .idea/
+
+# VSCode
+.vscode/
+
+# Node
+node_modules/
+
+#MacOS
+.DS_Store
