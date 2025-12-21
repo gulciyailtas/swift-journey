@@ -7,56 +7,60 @@
 
 import Foundation
 import Combine
+
 @MainActor
 class WeatherViewModel: ObservableObject {
-    
     @Published var displayData: WeatherDisplay?
     @Published var isLoading = false
     @Published var errorMessage: String?
 
     private let service: WeatherServiceProtocol
-    
+    private let suggestions = ["vn": "Van", "btm": "Batman", "ist": "Istanbul", "ank": "Ankara", "kst": "Kastamonu"]
+
     init(service: WeatherServiceProtocol) {
         self.service = service
     }
 
     func loadWeather(forCity city: String) async {
+        let input = city.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
+        if input.isEmpty {
+            self.errorMessage = "Lütfen bir şehir adı girin."
+            return
+        }
+
+        if let suggestion = suggestions[input] {
+            self.errorMessage = "'\(input)' yerine '\(suggestion)' mı demek istediniz?"
+            return
+        }
+
         isLoading = true
         errorMessage = nil
         
-        do {
-            let rawData = try await service.fetchWeather(forCity: city)
-            
-            displayData = WeatherDisplay(
-                cityName: rawData.name,
-                temperature: String(format: "%.1f°C", rawData.main.temp),
-                description: rawData.weather.first?.description.capitalized ?? "Bilinmiyor",
-                iconURL: rawData.weather.first.flatMap { icon in
-                    URL(string: "https://openweathermap.org/img/wn/\(icon.icon)@2x.png")
-                }
-            )
-        } catch let apiError as APIError {
-            errorMessage = handleError(apiError)
-        } catch {
-            errorMessage = "Bilinmeyen bir sistem hatası oluştu."
-        }
+        let result = await service.fetchWeather(forCity: input)
         
+        switch result {
+        case .success(let data):
+            displayData = WeatherDisplay(
+                cityName: data.name,
+                temperature: String(format: "%.1f°C", data.main.temp),
+                description: data.weather.first?.description.capitalized ?? "Bilinmiyor",
+                iconURL: URL(string: "https://openweathermap.org/img/wn/\(data.weather.first?.icon ?? "")@2x.png")
+            )
+        case .failure(let error):
+            errorMessage = handleError(error)
+        }
         isLoading = false
     }
 
     private func handleError(_ error: APIError) -> String {
         switch error {
-        case .invalidURL:
-            return "Geçersiz Adres."
-        case .requestFailed:
-            return "Ağ bağlantısı hatası. İnternetinizi kontrol edin."
-        case .decodingFailed:
-            return "Sunucudan alınan veri biçimi hatalı."
+        case .invalidURL: return "Geçersiz adres."
+        case .requestFailed: return "Ağ hatası."
+        case .decodingFailed: return "Veri okuma hatası."
         case .invalidStatusCode(let code):
-            if code == 404 { return "Şehir bulunamadı." }
-            return "Sunucu hatası: Kod \(code)"
-        case .unknown:
-            return "Bilinmeyen bir hata oluştu."
+            return code == 404 ? "Şehir bulunamadı." : "Sunucu hatası: \(code)"
+        case .unknown: return "Bilinmeyen hata."
         }
     }
 }
