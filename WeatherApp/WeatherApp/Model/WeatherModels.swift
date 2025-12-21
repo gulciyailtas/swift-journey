@@ -7,20 +7,26 @@
 
 import Foundation
 
-struct WeatherData: Codable {
-    let name: String // Şehir adı
-    let main: Main // Ana sıcaklık bilgileri
-    let weather: [Weather] // Hava durumu açıklamaları dizisi
+enum APIError: Error {
+    case invalidURL
+    case requestFailed(Error)
+    case decodingFailed(Error)
+    case invalidStatusCode(Int)
+    case unknown
 }
 
-// Ana sıcaklık ve nem bilgileri
-struct Main: Codable {
+struct WeatherData: Codable {
+    let name: String
+    let main: MainInfo
+    let weather: [WeatherInfo]
+}
+
+struct MainInfo: Codable {
     let temp: Double
     let humidity: Int
 }
 
-
-struct Weather: Codable {
+struct WeatherInfo: Codable {
     let description: String
     let icon: String
 }
