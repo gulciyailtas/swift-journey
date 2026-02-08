@@ -8,7 +8,7 @@
 import SwiftUI
 struct WeatherView: View {
     @StateObject var viewModel = WeatherViewModel(service: WeatherService(apiClient: OpenWeatherAPIClient()))
-    @State private var city: String = "Batman" //
+    @State private var city: String = "Batman"
     
     var body: some View {
         VStack {
@@ -31,7 +31,6 @@ struct WeatherView: View {
             } else if let error = viewModel.errorMessage {
                 VStack {
                     Text(error).foregroundColor(.red)
-                    // Öneri varsa düzeltme butonu göster
                     if error.contains("mı demek istediniz") {
                         Button("Evet, düzelt") {
                             if let suggestedCity = error.components(separatedBy: "'").safeElement(at: 3) {
@@ -65,7 +64,6 @@ struct WeatherView: View {
     }
 }
 
-// Güvenli array erişimi için
 extension Array {
     func safeElement(at index: Int) -> Element? {
         indices.contains(index) ? self[index] : nil

@@ -7,7 +7,6 @@
 
 import Foundation
 
-// Protokolü tam burada tanımlıyoruz ki başka dosyaya ihtiyaç kalmasın.
 protocol WeatherAPIClientProtocol {
     func fetchData(forCity city: String) async -> Result<Data, APIError>
 }

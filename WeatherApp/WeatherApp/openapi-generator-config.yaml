@@ -1,0 +1,8 @@
+# openapi-generator-config.yaml
+# WeatherApp
+# Created by Gulciya Iltas on 30.01.2026.
+
+generate:
+  - types
+  - client
+accessModifier: public

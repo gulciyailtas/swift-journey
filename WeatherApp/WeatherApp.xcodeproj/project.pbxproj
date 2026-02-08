@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		395C1B582F2D4A5500CB9E07 /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 395C1B572F2D4A5500CB9E07 /* OpenAPIRuntime */; };
+		395C1B5B2F2D4A8A00CB9E07 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 395C1B5A2F2D4A8A00CB9E07 /* OpenAPIURLSession */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		39E9CC972EEB74CD00B3077F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +29,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		392370BD2F2AB6140038149A /* WeatherApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WeatherApp.xcodeproj; sourceTree = "<group>"; };
+		392370C12F2AB6320038149A /* WeatherApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WeatherApp.xcodeproj; sourceTree = "<group>"; };
+		395C1B232F2D1F2300CB9E07 /* WeatherApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WeatherApp.xcodeproj; sourceTree = "<group>"; };
+		395C1B432F2D1F2300CB9E07 /* WeatherApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WeatherApp.xcodeproj; sourceTree = "<group>"; };
+		3968FA2B2F2D546D00B955DC /* WeatherApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WeatherApp.xcodeproj; sourceTree = "<group>"; };
+		39D7936C2F2D8A1100ABA3D8 /* WeatherApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WeatherApp.xcodeproj; sourceTree = "<group>"; };
 		39E9CC892EEB74CC00B3077F /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E9CC962EEB74CD00B3077F /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E9CCA02EEB74CD00B3077F /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		39D793812F2D8BC900ABA3D8 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WeatherAppTests/WeatherAppTests.swift,
+				WeatherAppTests/WeatherViewModel.swift,
+				WeatherAppUITests/WeatherAppUITests.swift,
+				WeatherAppUITests/WeatherAppUITestsLaunchTests.swift,
+			);
+			target = 39E9CC882EEB74CC00B3077F /* WeatherApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		39E9CC8B2EEB74CC00B3077F /* WeatherApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherApp;
-			sourceTree = "<group>";
-		};
-		39E9CC992EEB74CD00B3077F /* WeatherAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherAppTests;
-			sourceTree = "<group>";
-		};
-		39E9CCA32EEB74CD00B3077F /* WeatherAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherAppUITests;
+			exceptions = (
+				39D793812F2D8BC900ABA3D8 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */,
+			);
+			name = WeatherApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395C1B5B2F2D4A8A00CB9E07 /* OpenAPIURLSession in Frameworks */,
+				395C1B582F2D4A5500CB9E07 /* OpenAPIRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +91,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		392370BE2F2AB6140038149A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		392370C22F2AB6320038149A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		395C1B242F2D1F2300CB9E07 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		395C1B442F2D1F2300CB9E07 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3968FA2C2F2D546D00B955DC /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39D7936D2F2D8A1100ABA3D8 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		39E9CC802EEB74CC00B3077F = {
 			isa = PBXGroup;
 			children = (
 				39E9CC8B2EEB74CC00B3077F /* WeatherApp */,
-				39E9CC992EEB74CD00B3077F /* WeatherAppTests */,
-				39E9CCA32EEB74CD00B3077F /* WeatherAppUITests */,
 				39E9CC8A2EEB74CC00B3077F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,12 +153,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				395C1B5D2F2D4ACC00CB9E07 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				39E9CC8B2EEB74CC00B3077F /* WeatherApp */,
 			);
 			name = WeatherApp;
 			packageProductDependencies = (
+				395C1B572F2D4A5500CB9E07 /* OpenAPIRuntime */,
+				395C1B5A2F2D4A8A00CB9E07 /* OpenAPIURLSession */,
 			);
 			productName = WeatherApp;
 			productReference = 39E9CC892EEB74CC00B3077F /* WeatherApp.app */;
@@ -129,9 +179,6 @@
 			);
 			dependencies = (
 				39E9CC982EEB74CD00B3077F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				39E9CC992EEB74CD00B3077F /* WeatherAppTests */,
 			);
 			name = WeatherAppTests;
 			packageProductDependencies = (
@@ -152,9 +199,6 @@
 			);
 			dependencies = (
 				39E9CCA22EEB74CD00B3077F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				39E9CCA32EEB74CD00B3077F /* WeatherAppUITests */,
 			);
 			name = WeatherAppUITests;
 			packageProductDependencies = (
@@ -195,9 +239,40 @@
 			);
 			mainGroup = 39E9CC802EEB74CC00B3077F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				395C1B552F2D49E600CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				395C1B562F2D4A5500CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				395C1B592F2D4A8A00CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 39E9CC8A2EEB74CC00B3077F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 395C1B442F2D1F2300CB9E07 /* Products */;
+					ProjectRef = 395C1B432F2D1F2300CB9E07 /* WeatherApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 3968FA2C2F2D546D00B955DC /* Products */;
+					ProjectRef = 3968FA2B2F2D546D00B955DC /* WeatherApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 392370BE2F2AB6140038149A /* Products */;
+					ProjectRef = 392370BD2F2AB6140038149A /* WeatherApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 395C1B242F2D1F2300CB9E07 /* Products */;
+					ProjectRef = 395C1B232F2D1F2300CB9E07 /* WeatherApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 39D7936D2F2D8A1100ABA3D8 /* Products */;
+					ProjectRef = 39D7936C2F2D8A1100ABA3D8 /* WeatherApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 392370C22F2AB6320038149A /* Products */;
+					ProjectRef = 392370C12F2AB6320038149A /* WeatherApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				39E9CC882EEB74CC00B3077F /* WeatherApp */,
@@ -256,6 +331,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		395C1B5D2F2D4ACC00CB9E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 395C1B5C2F2D4ACC00CB9E07 /* OpenAPIGenerator */;
+		};
 		39E9CC982EEB74CD00B3077F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 39E9CC882EEB74CC00B3077F /* WeatherApp */;
@@ -578,6 +657,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		395C1B552F2D49E600CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+		395C1B562F2D4A5500CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		395C1B592F2D4A8A00CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		395C1B572F2D4A5500CB9E07 /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395C1B562F2D4A5500CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+		395C1B5A2F2D4A8A00CB9E07 /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395C1B592F2D4A8A00CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+		395C1B5C2F2D4ACC00CB9E07 /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395C1B552F2D49E600CB9E07 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39E9CC812EEB74CC00B3077F /* Project object */;
 }
